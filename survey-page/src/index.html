@@ -11,6 +11,85 @@
 </head>
 
 <body>
+    <header>
+        <h1>Feedback Form</h1>
+    </header>
+    <main>
+        <form action="" method="post" class="feedback_form">
+            <div class="feedback_form_name">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="feedback-form_email">
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+            <div class="feedback-form_batch">
+                <label for="batch-select">Choose a batch:</label>
+
+                <select name="batches" id="batch-select">
+                    <option value="winter2020">Winter 2020</option>
+                    <option value="spring2020">Spring 2020</option>
+                    <option value="autumn2020">Autumn 2020</option>
+                </select>
+
+            </div>
+            <fieldset class="is-completed">
+                <legend>Do you complite all the exercises from week 1?</legend>
+
+                <!-- <div> -->
+                <input type="radio" id="is-completed_true" name="is-completed" value="true">
+                <label for="is-completed_true">Yes</label>
+                <!-- </div> -->
+
+                <!-- <div> -->
+                <input type="radio" id="is-completed_false" name="is-completed" value="false">
+                <label for="is-completed_false">No</label>
+                <!-- </div> -->
+            </fieldset>
+
+
+            <fieldset class="favorite-exercises">
+                <label class="favorite-exercises_label">Choose your favourite exercises:</legend>
+
+                    <div class="favorite-exercises_option">
+                        <input type="checkbox" id="css-selectors" name="favorite-exercises">
+                        <label for="css-selectors">CSS selectors</label>
+                    </div>
+                    <div class="favorite-exercises_option">
+                        <input type="checkbox" id="book-page" name="favorite-exercises">
+                        <label for="book-page">Book page</label>
+                    </div>
+                    <div class="belfast-kindergarden">
+                        <input type="checkbox" id="belfast-kindergarden" name="favorite-exercises">
+                        <label for="belfast-kindergarden">Belfast International Kindergarden</label>
+                    </div>
+                    <div class="favorite-exercises_option">
+                        <input type="checkbox" id="crownsnest-retreat" name="favorite-exercises">
+                        <label for="crownsnest-retreat">Crownsnest Retreat</label>
+                    </div>
+                    <div class="favorite-exercises_option">
+                        <input type="checkbox" id="google-page" name="favorite-exercises">
+                        <label for="google-page">Google page</label>
+                    </div>
+                    <div class="favorite-exercises_option">
+                        <input type="checkbox" id="doc-page" name="favorite-exercises">
+                        <label for="doc-page">Documentation page</label>
+                    </div>
+                    <div class="aneta-portfolio">
+                        <input type="checkbox" id="aneta-portfolio" name="favorite-exercises">
+                        <label for="aneta-portfolio">Anete Webbie Personal Portfolio</label>
+                    </div>
+
+
+            </fieldset>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </main>
 
 </body>
 
