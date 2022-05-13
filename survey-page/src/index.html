@@ -7,83 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey page</title>
     <link rel="stylesheet" href="/css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Feedback Form</h1>
+        <h1 class="feedback_header">Feedback Form</h1>
     </header>
     <main>
         <form action="" method="post" class="feedback_form">
-            <div class="feedback_form_name">
-                <label for="name">Name</label>
-                <input type="text" name="name">
+            <div class="feedback_form_input">
+                <label for="name" class="feedback_form_input_lbl">Name</label>
+                <input type="text" name="name" class="feedback_form_input_field">
             </div>
-            <div class="feedback-form_email">
-                <label for="email">Email</label>
-                <input type="text" name="email">
+            <div class="feedback_form_input">
+                <label for="email" class="feedback_form_input_lbl">Email</label>
+                <input type="text" name="email" class="feedback_form_input_field">
             </div>
-            <div class="feedback-form_batch">
-                <label for="batch-select">Choose a batch:</label>
+            <div class="feedback_form_select">
+                <label for="batch-select" class="feedback_form_select_lbl">Choose batch:</label>
 
-                <select name="batches" id="batch-select">
+                <select name="batches" id="batch-select" class="feedback_form_select_field">
                     <option value="winter2020">Winter 2020</option>
                     <option value="spring2020">Spring 2020</option>
                     <option value="autumn2020">Autumn 2020</option>
                 </select>
 
             </div>
-            <fieldset class="is-completed">
-                <legend>Do you complite all the exercises from week 1?</legend>
+            <fieldset class="feedback_form_radio">
+                <legend class="feedback_form_radio_legend">Did you complete all the exercises from week 1?</legend>
 
-                <!-- <div> -->
-                <input type="radio" id="is-completed_true" name="is-completed" value="true">
-                <label for="is-completed_true">Yes</label>
-                <!-- </div> -->
-
-                <!-- <div> -->
-                <input type="radio" id="is-completed_false" name="is-completed" value="false">
-                <label for="is-completed_false">No</label>
-                <!-- </div> -->
+                <div class="feedback_form_radio_true">
+                    <input type="radio" id="is-completed_true" name="is-completed" value="true">
+                    <label for="is-completed_true">Yes</label>
+                </div>
+                <div class="feedback_form_radio_false">
+                    <input type="radio" id="is-completed_false" name="is-completed" value="false">
+                    <label for="is-completed_false">No</label>
+                </div>
             </fieldset>
 
 
-            <fieldset class="favorite-exercises">
-                <label class="favorite-exercises_label">Choose your favourite exercises:</legend>
+            <fieldset class="feedback_form_checkbox">
+                <label class="feedback_form_checkbox_legend">Choose your favourite exercises:</legend>
 
-                    <div class="favorite-exercises_option">
+                    <div class="feedback_form_checkbox_option">
                         <input type="checkbox" id="css-selectors" name="favorite-exercises">
                         <label for="css-selectors">CSS selectors</label>
                     </div>
-                    <div class="favorite-exercises_option">
+                    <div class="feedback_form_checkbox_option">
                         <input type="checkbox" id="book-page" name="favorite-exercises">
                         <label for="book-page">Book page</label>
                     </div>
-                    <div class="belfast-kindergarden">
+                    <div class="feedback_form_checkbox_option">
                         <input type="checkbox" id="belfast-kindergarden" name="favorite-exercises">
                         <label for="belfast-kindergarden">Belfast International Kindergarden</label>
                     </div>
-                    <div class="favorite-exercises_option">
+                    <div class="feedback_form_checkbox_option">
                         <input type="checkbox" id="crownsnest-retreat" name="favorite-exercises">
                         <label for="crownsnest-retreat">Crownsnest Retreat</label>
                     </div>
-                    <div class="favorite-exercises_option">
+                    <div class="feedback_form_checkbox_option">
                         <input type="checkbox" id="google-page" name="favorite-exercises">
                         <label for="google-page">Google page</label>
                     </div>
-                    <div class="favorite-exercises_option">
+                    <div class="feedback_form_checkbox_option">
                         <input type="checkbox" id="doc-page" name="favorite-exercises">
                         <label for="doc-page">Documentation page</label>
                     </div>
-                    <div class="aneta-portfolio">
+                    <div class="feedback_form_checkbox_option">
                         <input type="checkbox" id="aneta-portfolio" name="favorite-exercises">
                         <label for="aneta-portfolio">Anete Webbie Personal Portfolio</label>
                     </div>
 
 
             </fieldset>
-            <div>
+            <div class="feedback_message">
+                <label class="feedback_message_lbl" for="">My message *</label>
+                <textarea class="feedback_message_text" name="message" id="contact_my_message" cols="30"
+                    rows="7"></textarea>
+            </div>
+            <div class="sibmit_button">
                 <button type="submit">Submit</button>
             </div>
 

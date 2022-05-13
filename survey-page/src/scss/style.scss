@@ -1,2 +1,118 @@
-// White: #ffffff
-// Dark blue: #001555
+$white: #ffffff;
+$normal_blue: #203164;
+$dark_blue: #001555;
+
+
+$content_width: 35em;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $dark_blue;
+}
+
+.feedback_header {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+
+}
+
+.feedback_form {
+    max-width: $content_width;
+    background-color: $normal_blue;
+    margin: 0 auto;
+    padding: 2em;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    border-radius: 3px;
+
+    &_input {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding-top: .7em;
+
+        &_lbl {
+            text-transform: uppercase;
+        }
+
+        &_field {
+            height: 2em;
+        }
+
+    }
+
+    &_select {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding-top: .7em;
+
+        &_lbl {
+            text-transform: uppercase;
+        }
+
+        &_field {
+            height: 2em;
+        }
+    }
+
+    &_radio {
+        margin: 0;
+        border: none;
+        padding: .7em 0;
+
+        &_legend {
+            padding-top: 1em;
+            text-transform: uppercase;
+        }
+
+
+    }
+
+    &_checkbox {
+        margin: 0;
+        border: none;
+        padding: .7em 0;
+
+        &_legend {
+            padding-top: 1em;
+            text-transform: uppercase;
+        }
+
+
+        &_option {
+            margin-top: 1em;
+        }
+
+    }
+
+
+}
+
+
+.feedback_message {
+    display: flex;
+    flex-direction: column;
+}
+
+.sibmit_button {
+
+    margin: 0 auto;
+    color: $dark_blue;
+    border-radius: 5px;
+    height: 1em;
+
+}
